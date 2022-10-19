@@ -7,7 +7,7 @@ fun main() {
     runBlocking {
         launch {
             GeneratorShared.sharedFlow.collect {
-                println(it.toString())
+                println(it)
             }
         }
     }
